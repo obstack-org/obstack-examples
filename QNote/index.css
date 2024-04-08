@@ -1,0 +1,133 @@
+:root {
+  --titlebar-height: 45px;
+  --titlebar-color: #111;
+  --titlebar-background: #eee;
+  --sidebar-width: 180px;
+  --sidebar-color: #111;
+  --sidebar-background: #eee;
+  --content-color: #111;
+  --content-background: #eee;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  color: var(--content-color);
+  font-size: 14px;
+  font-family: "Consolas", sans-serif;
+  font-weight: 400;
+}
+*[readonly] {
+  background-color: #ddd !important;
+}
+body {
+  background-color: var(--content-color);
+}
+input, select, textarea {
+  display: inline-block;
+  width: 300px;
+  margin: 4px 0;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.titlebar, .sidebar, .content, .alert {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.titlebar {
+  width: calc(100% - 12px);
+  height: var(--titlebar-height);
+  padding: 6px;  
+  color: var(--titlebar-color);
+  background: var(--titlebar-background);
+  font-size: 28px;
+  font-weight: 600;
+}
+.sidebar {
+  top: var(--titlebar-height);
+  width: var(--sidebar-width);
+  color: var(--sidebar-color);
+  background: var(--sidebar-background);
+  bottom: 0px;
+  padding: 4px 0px 0px 2px;
+}
+.content {
+  top: var(--titlebar-height);
+  left: var(--sidebar-width);
+  right: 0px;
+  bottom: 0px;
+  min-width: 820px;
+  min-height: 450px;
+  color: var(--content-color);
+  background: var(--content-background);
+}
+.config {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 412px;
+  height: 125px;
+  padding: 10px;
+  border: solid 1px #888;
+  background: #eee;
+  border-radius: 8px;
+  display: none;
+}
+.alert {
+  top: 10px;
+  left: 140px;
+  right: 140px;
+  max-width: 1000px;
+  height: 18px;
+  padding: 6px 12px;
+  background: #fdd;
+  border: solid 1px #f44;
+  border-radius: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sidebar-item {
+  padding: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+}
+.sidebar-item:hover {
+  background-color: #ddd;
+}
+
+.glink {
+  font-size: 12px;
+  margin: 5px 0px 0px 4px;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+}
+.mnbtn {
+  position: relative;
+  float: right !important;
+  margin-right: 10px;
+  font-size: 28px;  
+  font-weight: 400;
+  cursor: pointer;
+
+}
+.mnbtn-disable {
+  color: #aaa !important;
+  cursor: default !important;
+}
+.nttext {
+  margin-left: 10px;
+  padding: 4px;
+  width: calc(100% - 30px);
+  height: calc(100% - 20px);
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  overflow: auto;
+  outline: none;
+  resize: none;
+}
