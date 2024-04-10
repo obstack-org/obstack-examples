@@ -6,7 +6,7 @@ ObStack Ansible is part of the ObStack example set.
 
 ![Ansible Environment](img_ansible1.png)
 
-### Quick start
+# Quick start
 
 ObStack Ansible requires knowledge of Ansible, a working ObStack setup, and a base set of Object Types with specific fields. For a quick start take the following steps:
 
@@ -29,9 +29,9 @@ ObStack Ansible requires knowledge of Ansible, a working ObStack setup, and a ba
 
 To setup another object type for running other playbooks you can run the script again with another name. Note that when changing the prefix, the init function of the example script will not detect the existing Hosts and Inventory object types and recreate them with the new prefix.
 
-![Ansible setup](img_ansible3.png)
+![Ansible setup](img_ansible2.png)
 
-### Manual setup
+# Manual setup
 
 For setting up ObStack manually or add additional object types for running other playbooks the following fields are required:
 
