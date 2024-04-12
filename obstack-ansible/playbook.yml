@@ -1,0 +1,14 @@
+---
+- name: "Example Playbook"
+  hosts: all
+  # connection: local
+  tasks:
+    - name: Hello World
+      debug:
+        msg: Hello World..
+    - name: Arguments
+      debug:
+        msg: >-
+          Arg1: {{ Arg1 }},
+          Arg2: {{ Arg2 }}
+
